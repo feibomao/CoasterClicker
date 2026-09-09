@@ -1,0 +1,283 @@
+/* 
+Authors: Dennis Qin and Colin Wei
+Date: 02/27/2026
+Descr: CSS file for index.html
+*/
+
+
+#content {
+    display: flex;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(221, 29, 49);
+}
+
+#title {
+    color: rgb(42, 44, 106);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 300%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.column {
+    margin: 1px;
+    padding: 5px;
+    background-color: rgb(233, 162, 56);
+    width: 33%;
+    border-color: black;
+    border-width: 2px;
+}
+
+.upgrades {
+    display: flex;
+    background-color: rgb(239, 203, 156);
+    height: 50px;
+    width: 98%;
+    padding: 5px;
+}
+
+#upgradeContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.upgradeDisplay1,
+.upgradeDisplay2,
+.upgradeDisplay3,
+.upgradeDisplay4,
+.upgradeDisplay5,
+.upgradeDisplay6,
+.upgradeDisplay7,
+.upgradeDisplay8,
+.upgradeDisplay9 {
+    display: flex;
+    visibility: hidden;
+    background-color: rgb(239, 203, 156);
+    height: 50px;
+    width: 97%;
+    padding: 5px;
+}
+
+#upgradeContainer img {
+    width: 20%;
+}
+
+#booth1,
+#booth2,
+#booth3,
+#booth4,
+#booth5,
+#stall1,
+#stall2,
+#stall3,
+#stall4,
+#stall5,
+#restaurant1,
+#restaurant2,
+#restaurant3,
+#restaurant4,
+#restaurant5,
+#teacup1,
+#teacup2,
+#teacup3,
+#teacup4,
+#teacup5,
+#kiddie1,
+#kiddie2,
+#kiddie3,
+#kiddie4,
+#kiddie5,
+#ship1,
+#ship2,
+#ship3,
+#ship4,
+#ship5,
+#family1,
+#family2,
+#family3,
+#family4,
+#family5,
+#tower1,
+#tower2,
+#tower3,
+#tower4,
+#tower5,
+#thrill1,
+#thrill2,
+#thrill3,
+#thrill4,
+#thrill5 {
+    visibility: hidden;
+}
+
+#col3 button {
+    width: 40%;
+    height: 100%;
+    margin-right: 10px;
+    margin-right: 10px;
+
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+}
+
+.owned {
+    display: flex;
+}
+
+.cost {
+    display: flex;
+}
+
+.stats p {
+    margin: 3%;
+}
+
+.stats {
+    width: 20%;
+    padding-right: 20px;
+}
+
+#goldTicket {
+    position: fixed;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 6%;
+    bottom: 70%;
+    left: 15%;
+}
+
+#theTicket {
+    display: block;
+    margin: 0 auto;
+}
+
+#achievement {
+    visibility: hidden;
+    position: fixed;
+    bottom: 5%;
+    left: 31.5%;
+
+    display: flex;
+    text-align: left;
+    margin: 0 auto;
+    padding: 5px;
+    line-height: 10px;
+
+    border: 10px solid rgb(91, 39, 1);
+    background: rgb(126, 71, 23);
+    color: white;
+    width: 35%;
+}
+
+.achievementContent {
+    width: 65%;
+}
+
+.achievementImage {
+    width: 30%;
+}
+
+.exitButton1,
+.exitButton2,
+.exitButton3 {
+    width: 5%;
+}
+
+.exitButton1 img,
+.exitButton2 img,
+.exitButton3 img {
+    width: 100%;
+    filter: invert(100%);
+}
+
+.exitButton1 img:hover,
+.exitButton2 img:hover,
+.exitButton3 img:hover {
+    box-shadow: 0 0 2px;
+}
+
+.achievementImage img {
+    width: 75%;
+}
+
+#col1 h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#achievement_button,
+#helpButton {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(221, 29, 49);
+    color: white;
+    padding: 1%;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 1%;
+
+    user-select: none;
+    cursor: pointer;
+
+}
+
+#achievement_button h1 {
+    text-align: center;
+    pointer-events: none;
+}
+
+#achievement_button:hover,
+#helpButton:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#achievement_tab,
+#help_tab {
+    visibility: hidden;
+    position: fixed;
+    bottom: 20%;
+    left: 25%;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 5px;
+    line-height: 10px;
+
+    border: 10px solid rgb(91, 39, 1);
+    background: rgb(126, 71, 23);
+    color: white;
+    width: 50%;
+    height: 50%;
+}
+
+#achievement_header,
+#help_header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5%;
+
+}
+
+#achievement_header h1,
+#help_header h1 {
+    width: 95%;
+    text-align: center;
+}
+
+#achievement_content,
+#helpContent {
+    display: flex;
+    margin: 0 3%;
+    flex-direction: column;
+    overflow-y: auto;
+}

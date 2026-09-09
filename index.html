@@ -1,0 +1,352 @@
+<!-- 
+Authors: Dennis Qin and Colin Wei
+Date: 02/27/2026
+Descr: index.html file serves as the main page for the game
+
+-->
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Theme Park Clicker</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/clicker.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1 id="title">Theme Park Clicker</h1>
+        </div>
+
+        <div id=content>
+            <div id="col1" class="column">
+                <img id="theTicket" src="images/ticket.png">
+
+                <img id="goldTicket" src="images/gticket.png">
+
+
+                <h1>Tickets:</h1>
+                <div class="number">
+                    <h1 id="tickets">0</h1>
+                    <h1 id="unit"></h1>
+                </div>
+
+                <h1>Tickets Per Second:</h1>
+                <h1 id="ticketsPerSec">0</h1>
+                <div id="buttons">
+                    <h1 id="achievement_button">Achievement Tab</h1>
+                    <h1 id="helpButton">Help</h1>
+                </div>
+            </div>
+            <div class="column">
+                <h3>Upgrades</h3>
+                <div id="upgradeContainer">
+                    <div class="upgradeDisplay1">
+                        <img id="booth1" src="images/booth.png">
+                        <img id="booth2" src="images/booth.png">
+                        <img id="booth3" src="images/booth.png">
+                        <img id="booth4" src="images/booth.png">
+                        <img id="booth5" src="images/booth.png">
+                    </div>
+                    <div class="upgradeDisplay2">
+                        <img id="stall1" src="images/prizegame.png">
+                        <img id="stall2" src="images/prizegame.png">
+                        <img id="stall3" src="images/prizegame.png">
+                        <img id="stall4" src="images/prizegame.png">
+                        <img id="stall5" src="images/prizegame.png">
+                    </div>
+                    <div class="upgradeDisplay3">
+                        <img id="restaurant1" src="images/restaurant.png">
+                        <img id="restaurant2" src="images/restaurant.png">
+                        <img id="restaurant3" src="images/restaurant.png">
+                        <img id="restaurant4" src="images/restaurant.png">
+                        <img id="restaurant5" src="images/restaurant.png">
+                    </div>
+                    <div class="upgradeDisplay4">
+                        <img id="teacup1" src="images/teacup.png">
+                        <img id="teacup2" src="images/teacup.png">
+                        <img id="teacup3" src="images/teacup.png">
+                        <img id="teacup4" src="images/teacup.png">
+                        <img id="teacup5" src="images/teacup.png">
+                    </div>
+                    <div class="upgradeDisplay5">
+                        <img id="kiddie1" src="images/kiddiecoaster.png">
+                        <img id="kiddie2" src="images/kiddiecoaster.png">
+                        <img id="kiddie3" src="images/kiddiecoaster.png">
+                        <img id="kiddie4" src="images/kiddiecoaster.png">
+                        <img id="kiddie5" src="images/kiddiecoaster.png">
+                    </div>
+                    <div class="upgradeDisplay6">
+                        <img id="ship1" src="images/swingingship.png">
+                        <img id="ship2" src="images/swingingship.png">
+                        <img id="ship3" src="images/swingingship.png">
+                        <img id="ship4" src="images/swingingship.png">
+                        <img id="ship5" src="images/swingingship.png">
+                    </div>
+                    <div class="upgradeDisplay7">
+                        <img id="family1" src="images/familycoaster.png">
+                        <img id="family2" src="images/familycoaster.png">
+                        <img id="family3" src="images/familycoaster.png">
+                        <img id="family4" src="images/familycoaster.png">
+                        <img id="family5" src="images/familycoaster.png">
+                    </div>
+                    <div class="upgradeDisplay8">
+                        <img id="tower1" src="images/droptower.png">
+                        <img id="tower2" src="images/droptower.png">
+                        <img id="tower3" src="images/droptower.png">
+                        <img id="tower4" src="images/droptower.png">
+                        <img id="tower5" src="images/droptower.png">
+                    </div>
+                    <div class="upgradeDisplay9">
+                        <img id="thrill1" src="images/thrillcoaster.png">
+                        <img id="thrill2" src="images/thrillcoaster.png">
+                        <img id="thrill3" src="images/thrillcoaster.png">
+                        <img id="thrill4" src="images/thrillcoaster.png">
+                        <img id="thrill5" src="images/thrillcoaster.png">
+                    </div>
+
+                </div>
+            </div>
+            <div id="col3" class="column">
+                <h3>upgrades (click value)</h3>
+                <div class=upgrades>
+                    <img src="images/booth.png" height="100%">
+                    <button id="ticketBooth" type="button">ticket booth</button>
+                    <div class="stats">
+                        <div class="cost">
+                            <p>Price: </p>
+                            <p id="tbPrice">0</p>
+                        </div>
+                        <div class="owned">
+                            <p>Owned: </p>
+                            <p id="tbNum">0</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class=upgrades>
+                    <img src="images/prizegame.png" height="100%">
+                    <button id="prizeGame" type="button">prize game stall</button>
+                    <div class="stats">
+                        <div class="cost">
+                            <p>Price: </p>
+                            <p id="pgPrice">0</p>
+                        </div>
+                        <div class="owned">
+                            <p>Owned: </p>
+                            <p id="pgNum">0</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class=upgrades>
+                    <img src="images/restaurant.png" height="100%">
+                    <button id="restaraunt" type="button">restaraunt</button>
+                    <div class="stats">
+                        <div class="cost">
+                            <p>Price: </p>
+                            <p id="rsPrice">0</p>
+                        </div>
+                        <div class="owned">
+                            <p>Owned: </p>
+                            <p id="rsNum">0</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h3>upgrades (autoclick)</h3>
+
+                <div class=upgrades>
+                    <img src="images/teacup.png" height="100%">
+                    <button id="teacup" type="button">teacups</button>
+                    <div class="stats">
+                        <div class="cost">
+                            <p>Price: </p>
+                            <p id="tcPrice">0</p>
+                        </div>
+                        <div class="owned">
+                            <p>Owned: </p>
+                            <p id="tcNum">0</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class=upgrades>
+                    <img src="images/kiddiecoaster.png" height="100%">
+                    <button id="kidCoaster" type="button">kiddie coaster</button>
+                    <div class="stats">
+                        <div class="cost">
+                            <p>Price: </p>
+                            <p id="kcPrice">0</p>
+                        </div>
+                        <div class="owned">
+                            <p>Owned: </p>
+                            <p id="kcNum">0</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class=upgrades>
+                    <img src="images/swingingship.png" height="100%">
+                    <button id="swingingShip" type="button">swinging ship</button>
+                    <div class="stats">
+                        <div class="cost">
+                            <p>Price: </p>
+                            <p id="ssPrice">0</p>
+                        </div>
+                        <div class="owned">
+                            <p>Owned: </p>
+                            <p id="ssNum">0</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class=upgrades>
+                    <img src="images/familycoaster.png" height="100%">
+                    <button id="famCoaster" type="button">family coaster</button>
+                    <div class="stats">
+                        <div class="cost">
+                            <p>Price: </p>
+                            <p id="fcPrice">0</p>
+                        </div>
+                        <div class="owned">
+                            <p>Owned: </p>
+                            <p id="fcNum">0</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class=upgrades>
+                    <img src="images/droptower.png" height="100%">
+                    <button id="dropTower" type="button">drop tower</button>
+                    <div class="stats">
+                        <div class="cost">
+                            <p>Price: </p>
+                            <p id="dtPrice">0</p>
+                        </div>
+                        <div class="owned">
+                            <p>Owned: </p>
+                            <p id="dtNum">0</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class=upgrades>
+                    <img src="images/thrillcoaster.png" height="100%">
+                    <button id="thrillCoaster" type="button">thrill coaster</button>
+                    <div class="stats">
+                        <div class="cost">
+                            <p>Price: </p>
+                            <p id="thPrice">0</p>
+                        </div>
+                        <div class="owned">
+                            <p>Owned: </p>
+                            <p id="thNum">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="achievement">
+
+            <div class="achievementImage">
+                <img src="images/trophy.png">
+            </div>
+
+            <div class="achievementContent">
+                <h2 id="achievementTitle">Title</h2>
+                <p id="achievementDescr">Descr</p>
+                <p id="achievementAward">Award</p>
+            </div>
+
+            <div class="exitButton1">
+                <img src="images/exit_button.png">
+            </div>
+        </div>
+
+        <div id="achievement_tab">
+            <div id="achievement_header">
+                <h1 id="achievement_title">Achievements (0/30 0%)</h1>
+                <div class="exitButton2">
+                    <img src="images/exit_button.png">
+                </div>
+            </div>
+            <div id="achievement_content">
+                <h2>Ticket related</h2>
+                <div id="section1">
+                    <h2 id="ticket1">☐ Just Getitng started: Reach 100 tickets.</h2>
+                    <h2 id="ticket2">☐ Now We're Talking: Reach 1,000 tickets.</h2>
+                    <h2 id="ticket3">☐ The Big Leagues: Reach 100,000 tickets.</h2>
+                    <h2 id="ticket4">☐ One milly?!: Reach 1M tickets.</h2>
+                    <h2 id="ticket5">☐ Roller Coaster Connoiseur: Reach 1B tickets.</h2>
+
+                    <h2 id="ticket6">☐ Profits are up: Earn 1,000 total tickets.</h2>
+                    <h2 id="ticket7">☐ Roller Coaster Entrepreneur: Earn 1M total tickets.</h2>
+                    <h2 id="ticket8">☐ Roller Coaster Tycoon: Earn 1B total tickets.</h2>
+                    <h2 id="ticket9">☐ Roller Coaster Empire: Earn 1T total tickets.</h2>
+
+                    <h2 id="ticket10">☐ Hidden in the depths: Find the golden ticket.</h2>
+                </div>
+                <h2>Clicking related</h2>
+                <div id="section2">
+                    <h2 id="click1">☐ Speedy Fingers: Click 100 times.</h2>
+                    <h2 id="click2">☐ Super Fingers: Click 1,000 times.</h2>
+                    <h2 id="click3">☐ Business is booming: Get 10 booths.</h2>
+                    <h2 id="click4">☐Real businessman: Purchase 100 booths.</h2>
+                    <h2 id="click5">☐ Stall Collector: Purchase 10 stalls.</h2>
+                    <h2 id="click6">☐ Minigame Tycoon: Purchase 100 stalls.</h2>
+                    <h2 id="click7">☐ Restaurant Expander: Get 10 restaurants.</h2>
+                    <h2 id="click8">☐ Franchiser: Purchase 100 restuarants.</h2>
+                </div>
+                <h2>Autoclicker related</h2>
+                <div id="section4">
+                    <h2 id="aclick1">☐ Tea Party: Purchase 10 teacups.</h2>
+                    <h2 id="aclick2">☐ Grand Tea Party: Purchase 100 teacups.</h2>
+                    <h2 id="aclick3">☐ Roller Rookies: Purchase 10 Kiddie Coasters.</h2>
+                    <h2 id="aclick4">☐ Kiddie Kingdom: Purchase 100 Kiddie Coasters.</h2>
+                    <h2 id="aclick5">☐ Captain of the Carnival: Purchase 10 Swing Ships.</h2>
+                    <h2 id="aclick6">☐ Pirate of the Caribbean: Purchase 100 Swing Ships.</h2>
+                    <h2 id="aclick7">☐ Family Adventure: Purchase 10 Family Coasters.</h2>
+                    <h2 id="aclick8">☐ Bloodline Thrill: Purchase 100 Family Coasters.</h2>
+                    <h2 id="aclick9">☐ Phobia of Heights No More: Purchase 10 Drop Towers.</h2>
+                    <h2 id="aclick10">☐ Gravity's Nemesis: Purchase 100 Drop Towers.</h2>
+                    <h2 id="aclick11">☐ Adrenaline Chaser: Get your first 10 Thrill Coasters.</h2>
+                    <h2 id="aclick12">☐ Thrill Ride Tycoon: No More: Purchase 100 Thrill Coasters.</h2>
+                </div>
+            </div>
+
+        </div>
+        <div id="help_tab">
+            <div id="help_header">
+                <h1 id="help_title">How to play?</h1>
+                <div class="exitButton3">
+                    <img src="images/exit_button.png">
+                </div>
+            </div>
+            <div id="helpContent">
+                <h2>1. To get tickets, click the red ticket.</h2>
+                <h2>2. Upgrades are on the right side of the screen.</h2>
+                <h2>3. Upgrades are split into manual click and auto click values.</h2>
+                <h2>4. Upgrade prices increases as you buy more.</h2>
+                <h2>5. Achievements give rewards.</h2>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
