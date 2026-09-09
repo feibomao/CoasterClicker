@@ -1,1 +1,1 @@
-Version 4.0.1 of a Cookie Clicker-style game I developed with a friend
+A Cookie Clicker-style game I developed with a friend
